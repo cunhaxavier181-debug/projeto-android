@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/*Escolha das fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Noto+Sans+Chorasmian&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face{
+  font-family: 'Android';
+  src: url('../fontes/idroid.otf') format('opentype');
+  font-weight: normal;
+}
+/* Escolha das cores em geral*/
+:root {
+  --cor0: #c5ebd6;
+  --cor1: #83e1ad;
+  --cor2: #3ddc84;
+  --cor3: #2fa866;
+  --cor4: #1a5c37;
+  --cor5: #063d1e;
+  --cor6: #6483A3;  
+  --cor7: #09040A;  
+  --cor8: #546674;  
+  --cor9: #283F48;  
+  --cor10: #384744;  
+
+  --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
+  --fonte-destaque: 'Bebas Neue', cursive;
+  --fonte-android: 'Android', cursive;
+}
+/*Formatção universal*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/*formatação do body*/
+body{
+  background-color: var(--cor0);
+  font-family: var(--fonte-padrao);
+}
+/*formatação do header*/
+header{
+  background-image: linear-gradient(to bottom, var(--cor3), transparent);
+  background-color: var(--cor4);
+  min-height: 150px;
+  text-align: center;
+  padding-top: 20px;
+}
+header>h1{
+  color: white;
+  font-family: var(--fonte-destaque);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 3em;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.438);
+}
+header>p{
+  color: white;
+  font-size: 1.2em;
+  font-family: var(--fonte-destaque);
+  max-width: 600px;
+  margin: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.438);
+}
+/*formatação do nav*/
+nav{
+  background-color: var(--cor5);
+  padding: 10px;
+  box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.308);
+}
+nav>a{
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition-duration: 0.5s;
+}
+nav>a:hover{
+  background-color: var(--cor2);
+  color: var(--cor5);
+}
+/*formatação do main*/
+main{
+  min-width: 900px;
+  max-width: auto;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+main h1{
+  color: var(--cor5);
+  font-family: var(--fonte-android);
+}
+main h2{
+  font-family: var(--fonte-android);
+  color: white;
+  font-size: 1.3em;
+  background-image: linear-gradient(to right, var(--cor10), transparent);
+  text-indent: 8px;
+}
+main p{
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 30px;
+  font-size: 1em;
+  line-height: 1.5em ;
+}
+main strong{
+  color: var(--cor4);
+  font-weight: bold;
+}
+main a{
+  color: var(--cor7);
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition-duration: 0.5s;
+}
+main a:hover{
+  background-color: var(--cor2);
+  color: var(--cor5);
+}
+.externo::after{
+  content: '\1f517';
+}
+.externo::before{
+  content: '\1f517';
+}
+main img{
+  width: 100%;
+}
+main img.pequena{
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+.video{
+  position: relative;
+  padding: 20px;
+  padding-bottom: 53.7%;
+  margin: 0px 0px 30px 0px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.685);
+}
+.video iframe{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+/* formatação aside*/
+aside{
+  background-color: var(--cor1);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.267);
+}
+aside ul{
+  list-style-type: '\2714\00a0\00a0';
+  list-style-position: inside;
+  columns: 2;
+}
+aside h3{
+  background-color: var(--cor3);
+  padding: 15px;
+  margin: -10px -10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/*formatação do footer*/
+footer{
+  background-color: var(--cor8);
+  color:var(--cor2);
+  padding: 8px;
+}
+footer p{
+  text-align: center;
+}
+footer a{
+  text-decoration: none;
+  color: aliceblue;
+}
+footer a:hover{
+  color: black;
+  background-color: #2fa866;
+  padding: 3px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
