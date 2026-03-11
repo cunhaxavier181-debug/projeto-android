@@ -99,7 +99,6 @@ main{
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  font-size: 1.3vw;
 }
 main h1{
   color: var(--cor5);
@@ -144,7 +143,6 @@ main a:hover{
 }
 main img{
   width: 100%;
-  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -166,6 +164,7 @@ main img.pequena{
   left: 0%;
   width: 100%;
   height: 100%;
+
 }
 
 /* formatação aside*/
@@ -192,7 +191,6 @@ footer{
   background-color: var(--cor8);
   color:var(--cor2);
   padding: 8px;
-  font-size: 1.3vw;
 }
 footer p{
   text-align: center;
